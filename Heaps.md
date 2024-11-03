@@ -90,3 +90,8 @@
   - For large data sets, heaps may require significant memory. Optimizations in memory usage can be tested, particularly with d-ary or Fibonacci heaps.
 
 --- 
+
+**GFG Links :** 
+https://www.geeksforgeeks.org/introduction-to-heap/
+https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-heap/
+https://www.geeksforgeeks.org/applications-of-heap-data-structure/
