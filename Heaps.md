@@ -92,6 +92,7 @@
 --- 
 
 **GFG Links :** 
+- https://www.geeksforgeeks.org/binary-heap-notes-for-gate-exam/?ref=lbp  (Main)
 - https://www.geeksforgeeks.org/introduction-to-heap/
 - https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-heap/
 - https://www.geeksforgeeks.org/applications-of-heap-data-structure/
