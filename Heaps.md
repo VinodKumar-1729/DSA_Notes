@@ -95,3 +95,44 @@
 - https://www.geeksforgeeks.org/introduction-to-heap/
 - https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-heap/
 - https://www.geeksforgeeks.org/applications-of-heap-data-structure/
+
+
+### 2. **Heap Properties and Complexity**
+   - **Height**: Height of a heap with `n` nodes is `O(log n)`.
+   - **Time Complexity**:
+     - **Insertion**: `O(log n)` because of heapify-up.
+     - **Deletion**: `O(log n)` for heapify-down.
+     - **Find Min/Max**: `O(1)` since it’s always at the root.
+     - **Build Heap**: `O(n)` when constructing from an unsorted array (using Floyd’s method).
+   - **Space Complexity**: `O(n)` for storing `n` elements.
+
+### 3. **Types of Heaps**
+   - **Binary Heap**: Most common; complete binary tree that follows the heap property.
+   - **Binomial Heap**: Supports faster union operations, often used in network algorithms.
+   - **Fibonacci Heap**: Provides improved amortized time for operations; used in advanced algorithms like Dijkstra’s shortest path.
+   - **Min-Max Heap**: A double-ended priority queue supporting both min and max operations efficiently.
+
+### 4. **Heapify Operations**
+   - **Heapify-Up (Swim)**: Used during insertion; element is moved up the tree until the heap property is restored.
+   - **Heapify-Down (Sink)**: Used during deletion or extract-max/min; element is moved down until the heap property is restored.
+   - **Recursive and Iterative Implementations**: Know both recursive and iterative ways to implement heapify for handling edge cases effectively.
+
+### 5. **Heap Sort**
+   - **Process**: Convert the array to a max-heap and repeatedly extract the max element to sort in ascending order.
+   - **Time Complexity**: `O(n log n)` (both average and worst case).
+   - **Space Complexity**: `O(1)` (in-place sorting).
+   - **Stability**: Heap Sort is not a stable sort (relative order of equal elements may not be preserved).
+
+### 6. **Priority Queues Using Heaps**
+   - Heaps are widely used to implement priority queues, especially in cases where dynamic element insertion and deletion are required.
+   - Operations:
+     - **Insert** (enqueue with priority): `O(log n)`
+     - **Extract Max/Min** (dequeue the highest priority element): `O(log n)`
+
+### 7. **Applications of Heaps in Algorithms**
+   - **Dijkstra’s Shortest Path Algorithm**: Uses a min-heap to fetch the minimum distance node.
+   - **Prim’s Minimum Spanning Tree**: Uses a min-heap for selecting the minimum edge.
+   - **Median of Stream of Numbers**: Two heaps (max-heap and min-heap) are used to efficiently find the median in streaming data.
+   - **Top-K Elements**: Min-heap can be used to maintain the top K elements of a large dataset.
+
+---
