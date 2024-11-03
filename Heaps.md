@@ -92,6 +92,6 @@
 --- 
 
 **GFG Links :** 
-https://www.geeksforgeeks.org/introduction-to-heap/
-https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-heap/
-https://www.geeksforgeeks.org/applications-of-heap-data-structure/
+- https://www.geeksforgeeks.org/introduction-to-heap/
+- https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-heap/
+- https://www.geeksforgeeks.org/applications-of-heap-data-structure/
