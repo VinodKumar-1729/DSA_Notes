@@ -72,16 +72,24 @@
 3. **Multithreading with Arrays**:
    - Arrays are not inherently thread-safe. In concurrent environments, accessing or modifying arrays requires synchronization techniques (locks or atomic operations) to avoid data races.
 
-#### Summary Table
-| Operation           | Complexity   | Description                                                |
-|---------------------|--------------|------------------------------------------------------------|
-| Access              | \(O(1)\)     | Direct access by index                                     |
-| Insertion/Deletion  | \(O(n)\)     | Requires shifting elements                                 |
-| Traversal           | \(O(n)\)     | Accessing each element                                     |
-| Searching           | Linear: \(O(n)\) / Binary: \(O(\log n)\) | Binary requires sorted array  |
-| Sorting             | \(O(n \log n)\) to \(O(n^2)\) | Complexity varies by algorithm |
-
 #### Additional Exam Tips
 - **Memory Access Formulas**: Practice formulas for 1D and 2D array element addresses as they often appear in competitive exams.
 - **Boundary Case Handling**: Prepare for questions involving boundary conditions, especially when dealing with insertions and deletions.
 - **Common Algorithms**: Familiarize with common sorting and searching algorithms implemented on arrays, including their optimizations and edge cases.
+
+
+### Summary Table
+
+| **Operation**            | **Time Complexity**       | **Space Complexity**   |
+|--------------------------|---------------------------|-------------------------|
+| Access by Index          | \( O(1) \)               | \( O(1) \)             |
+| Search (Linear)          | \( O(n) \)               | \( O(1) \)             |
+| Search (Binary)          | \( O(\log n) \)          | \( O(1) \)             |
+| Insert (End)             | \( O(1) \)               | \( O(n) \) for dynamic |
+| Insert (Beginning/Middle)| \( O(n) \)               | \( O(n) \)             |
+| Delete (End)             | \( O(1) \)               | \( O(1) \)             |
+| Delete (Beginning/Middle)| \( O(n) \)               | \( O(1) \)             |
+| Traversal                | \( O(n) \)               | \( O(1) \)             |
+| Sorting (Basic)          | \( O(n^2) \)             | \( O(1) \) to \( O(n) \) |
+| Sorting (Efficient)      | \( O(n \log n) \)        | \( O(n) \)             |
+| Special Algorithms       | \( O(n) \) to \( O(n^2) \) | \( O(1) \) to \( O(n) \) |
