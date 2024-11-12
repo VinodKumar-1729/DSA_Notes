@@ -1,3 +1,57 @@
+
+### 1. **Finding Index in a 1D Array**
+   - **Formula:** `index = base_address + (i * size_of_element)`
+   - Where:
+     - `base_address` = starting address of the array
+     - `i` = index position
+     - `size_of_element` = size (in bytes) of each element in the array
+
+### 2. **Finding Index in a 2D Array**
+   - **Row-major order (used in most languages like C/C++):**
+     - **Formula:** `index = base_address + ((i * columns) + j) * size_of_element`
+     - Where:
+       - `i` = row index
+       - `j` = column index
+       - `columns` = number of columns in the array
+   - **Column-major order (used in languages like Fortran):**
+     - **Formula:** `index = base_address + ((j * rows) + i) * size_of_element`
+     - Where:
+       - `i` = row index
+       - `j` = column index
+       - `rows` = number of rows in the array
+
+### 3. **Finding Index in a 3D Array**
+   - **Row-major order:**
+     - **Formula:** `index = base_address + ((i * depth * columns) + (j * columns) + k) * size_of_element`
+     - Where:
+       - `i` = depth index
+       - `j` = row index
+       - `k` = column index
+       - `depth` = depth (number of 2D matrices)
+       - `columns` = number of columns in each matrix
+
+### 4. **Summation of Elements**
+   - **Sum of all elements in an array of size `n`:**
+     - **Formula:** `sum = ∑ array[i]` for `i = 0` to `n-1`
+
+
+### Summary Table
+
+| **Operation**            | **Time Complexity**       | **Space Complexity**   |
+|--------------------------|---------------------------|-------------------------|
+| Access by Index          | \( O(1) \)               | \( O(1) \)             |
+| Search (Linear)          | \( O(n) \)               | \( O(1) \)             |
+| Search (Binary)          | \( O(\log n) \)          | \( O(1) \)             |
+| Insert (End)             | \( O(1) \)               | \( O(n) \) for dynamic |
+| Insert (Beginning/Middle)| \( O(n) \)               | \( O(n) \)             |
+| Delete (End)             | \( O(1) \)               | \( O(1) \)             |
+| Delete (Beginning/Middle)| \( O(n) \)               | \( O(1) \)             |
+| Traversal                | \( O(n) \)               | \( O(1) \)             |
+| Sorting (Basic)          | \( O(n^2) \)             | \( O(1) \) to \( O(n) \) |
+| Sorting (Efficient)      | \( O(n \log n) \)        | \( O(n) \)             |
+| Special Algorithms       | \( O(n) \) to \( O(n^2) \) | \( O(1) \) to \( O(n) \) |
+
+
 ### Arrays in Data Structures and Algorithms (DSA)
 
 #### Definition
@@ -76,20 +130,3 @@
 - **Memory Access Formulas**: Practice formulas for 1D and 2D array element addresses as they often appear in competitive exams.
 - **Boundary Case Handling**: Prepare for questions involving boundary conditions, especially when dealing with insertions and deletions.
 - **Common Algorithms**: Familiarize with common sorting and searching algorithms implemented on arrays, including their optimizations and edge cases.
-
-
-### Summary Table
-
-| **Operation**            | **Time Complexity**       | **Space Complexity**   |
-|--------------------------|---------------------------|-------------------------|
-| Access by Index          | \( O(1) \)               | \( O(1) \)             |
-| Search (Linear)          | \( O(n) \)               | \( O(1) \)             |
-| Search (Binary)          | \( O(\log n) \)          | \( O(1) \)             |
-| Insert (End)             | \( O(1) \)               | \( O(n) \) for dynamic |
-| Insert (Beginning/Middle)| \( O(n) \)               | \( O(n) \)             |
-| Delete (End)             | \( O(1) \)               | \( O(1) \)             |
-| Delete (Beginning/Middle)| \( O(n) \)               | \( O(1) \)             |
-| Traversal                | \( O(n) \)               | \( O(1) \)             |
-| Sorting (Basic)          | \( O(n^2) \)             | \( O(1) \) to \( O(n) \) |
-| Sorting (Efficient)      | \( O(n \log n) \)        | \( O(n) \)             |
-| Special Algorithms       | \( O(n) \) to \( O(n^2) \) | \( O(1) \) to \( O(n) \) |
